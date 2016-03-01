@@ -2,70 +2,133 @@
 \documentclass[11pt]{article}
 \usepackage{common}
 \usepackage{tikz}
+\usepackage{hyperref}
 \title{Final Projects  \\ CS 287: Statistical Natural Language Processing}
 \date{}
 
 \begin{document}
 
 \maketitle{}
-\section{Overview}
 
-\begin{itemize}
-\item Project Proposal; March 25th
-\item Status Update; April 15th
-\item Final Project Presentation; April 26th
-\item Final Project Due; April 26th
-\end{itemize}
+\section{Important Deadlines}
 
-\vspace{-1.75cm}
-\section{Introduction}
+The final project will consist of the following four aspects:
+
+\begin{enumerate}
+\item Project Proposal
+\item Status Update
+\item Final Paper
+\item Oral presentation in class
+\end{enumerate}
+\emph{No late days for any course project deadline.}
+
+\vspace{0.25cm}
+
+\noindent These deliverables will be due at the following deadlines:
+
+\begin{center}
+\begin{tabularx}{0.4\linewidth}{lr}
+  \toprule
+  Aspect & Deadline \\
+  \midrule
+  Project Proposal & 3/25, 5pm \\
+  Status Update & 4/15, 5pm \\
+  Oral Presentations&  4/26, in class \\
+  Final Project &  5/1, 5pm \\
+  \bottomrule
+\end{tabularx}
+\end{center}
 
 
-\section{Bibliography}
+\section{Goals and Scope}\label{goals-and-scope}
+
+This course has been devoted to coverage of research
+topics in modern natural language processing. The final 
+project is the capstone of the course and a chance for you 
+to engage with a difficult research problem in the area. 
+Students are expected to design and carry out final
+projects working in teams of two. You can use the Piazza forum
+to find partners. 
+As you have already implemented several research systems, 
+it is no longer a stretch to build one of your own :).
+
+
+
+% It is
+% intended to encourage you to integrate ideas from different course
+% components and allow you to delve deeper into areas of interest.
+% Projects may be implementation, testing, and analysis of algorithms
+% mentioned in lecture or described in the text but not covered in
+% assignments (e.g., alternative search or planning algorithms) or design
+% and implementation of an intelligent system that combines algorithms and
+% representations from several course components (e.g., a more complex
+% game-playing program or an intelligent advising system). Pick something
+% that interests you
+
+
 
 A crucial element of the project will be reading and responding
 intellectually to contemporary research in the field. Much of the
 class has been devoted to developing vocabulary for reading papers on
 these topics.  With this in mind, we will evaluate the project heavily
 based on their processing of related work. Before jumping on a project
-be sure to first find related references. Sometimes it can be hard to 
-find \texttt{good} references on a topic (particularly these days). As 
-a proxy  we recommend looking at papers from
+be sure to first find related references. As 
+a proxy we recommend looking at papers from:
 
-NLP
+\air 
+
+\noindent Natural Language Processing
 \begin{itemize}
-\item ACL
-\item NAACL
-\item EMNLP
+\item ACL/NAACL/ EMNLP
 \end{itemize}
 
-Deep Learning/ Machine Learning
+\noindent  Deep Learning/ Machine Learning
 \begin{itemize}
-\item ICML
-\item NIPS
-\item ICLR
-\item AISTATS
-\item UAI
+\item ICML/NIPS/ICLR/AISTATS/UAI
 \end{itemize}
 
 Additionally, NLP has several shared tasks which contain data and evaluation 
 on a specific problem: 
 
 \begin{itemize}
-\item SemEval
-\item CoNLL Shared Tasks
-\item KDDCup
+\item SemEval/CoNLL Shared Tasks/KDDCup
 \end{itemize}
 
 It has also become common to post new papers on the Arxiv. Note though that these 
 papers are often not peer reviewed. Be sure to be aware of this and keep it in mind.
 
-\section{Process}
+Plausible projects include: reimplementing and extending past papers, 
+applying algorithms from the class to new domains, presenting comprehensive 
+analysis and results to new language domains, and experimenting with 
+new techniques on optimizing or building large-scale systems. 
+
+If you are having trouble finding a topic yourself, a list of possible
+course ideas is given on the\href{https://github.com/CS287/Projects/wiki}{projects wiki}. Their
+content and scope are meant to be suggestive, not definitive. The
+teaching staff would be delighted to talk with you about
+possibilities. Each suggestion has an associated TF; he would be a
+good person with whom to speak first, but feel free to contact any of
+us. After the proposal, each final group will be assigned a course
+mentor who will be the best point of contact throughout the project.
+
+We will evaluate your project on the concepts it investigates and the
+results and on how well it demonstrates your comprehension of the
+concepts, techniques and issues we have covered in the class. The
+project grade will incorporate evaluation of the proposal,
+presentation (oral or poster) and final paper quality. As there is no
+final exam for CS 287, your final project is the major integrative
+element of coursework. It will account for 20\% of your overall course
+grade.
+
+
+\section{Deliverables}
 
 \subsection{Project Proposal}
 
-The first deadline will be a project proposal. 
-For the proposal we would like a one-page document describing 
+To ensure that you choose an appropriate project, you are required to
+turn in a 1--2 page project proposal. The proposal should begin with a
+clear, unambiguous statement of your topic, and include all of the
+following:
 
 \begin{itemize}
 \item the motivation of the project
@@ -76,24 +139,48 @@ For the proposal we would like a one-page document describing
 
 \item a bibliography of three (3) current references for the project   
 \end{itemize}
- 
 
 The proposal will be graded on mainly on completeness. It will allow us to assign you a mentor 
 and to propose early suggestions for related work and experiments.   
 
 \subsection{Status Update}
 
+To ensure that you are on track with the project and to identify any
+issues on time, you are required to submit a short (3-page) report
+with a status update. The report should describe the problem you are
+working on, the progress you've made so far, and any problems you came
+across that you would like to get help with. 
 
 \subsection{Presentation}
 
+The oral presentations will be on April 26th. These presentations are
+a chance to explain your problem and approach, showcase what you've
+accomplished, and get advice on surmounting any hurdles you've
+encountered. Students are expected to attend both presentation
+sessions, as they provide an opportunity for you to learn from each
+other.
 
-\subsection{Final Writeup}
 
-For the final project, we will limit you to ten (10) pages of writing.
-It should follow the Latex template that we have been using for the homework 
-including background, main body, related work, experimental work, and discussion. 
-Note that you should be judicious with your use of 10 pages. 
+Oral presentations will be allocated 10 minutes, and should be
+focused on key issues. You are encouraged to bring less than 4
+slides, because often just one diagram or chart can explain the
+essence of your idea and save lots of presentation time. You need
+not prepare fancy graphics; just come prepared to explain your topic
+and share what you have discovered.
 
-\section{}
+
+\subsection{Report}
+
+Finally, you must submit a written report on your project and the complete,
+well-documented source code for it. The report should be a maximum 10
+pages in length (this is actually quite short, so you should be judicious 
+with your details and graphics).
+
+The report format should be exactly the same as the homework
+assignments for the class and use the same Latex template. Your 
+goal should not be to innovate in the format, but to use the 
+standard we have had in class, and present details in a clear 
+and, hopefully, obvious way. 
+
 
 \end{document}
